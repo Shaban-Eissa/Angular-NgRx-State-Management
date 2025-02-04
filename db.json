@@ -1,9 +1,14 @@
 {
   "posts": [
     {
-      "id": 79,
-      "title": "first post",
-      "body": "body for the post"
+      "id": "79",
+      "title": "Updated Title",
+      "body": "Updated Body"
+    },
+    {
+      "id": "93",
+      "title": "new one",
+      "body": "adding post body"
     }
   ]
 }
