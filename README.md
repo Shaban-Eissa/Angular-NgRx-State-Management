@@ -1,27 +1,64 @@
-# NgrxDemo
+# Angular NgRx State Management
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
+This is a demo project showcasing the use of **NgRx** for state management in **Angular**. The project demonstrates the flow of actions, reducers, effects, and selectors with a real-world application, focusing on CRUD operations.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **CRUD operations** (Create, Read, Update, Delete) for posts
+- **NgRx state management** for handling actions, reducers, and effects
+- Integration with a **JSON server** backend for storing and fetching posts
+- **Reactive UI** using Angular with Tailwind CSS for styling
 
-## Code scaffolding
+## Tech Stack
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Angular**: Frontend framework
+- **NgRx**: State management library for Angular
+- **JSON Server**: Fake REST API for backend operations
+- **Tailwind CSS**: Utility-first CSS framework for styling
+- **Node.js & npm**: JavaScript runtime and package manager
 
-## Build
+## Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clone the repository:
 
-## Running unit tests
+   ```bash
+   git clone https://github.com/Shaban-Eissa/Angular-NgRx-State-Management.git
+   cd Angular-NgRx-State-Management
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. Run the application:
+   ```bash
+   ng serve
+   ```
 
-## Running end-to-end tests
+4. Start the JSON server:
+   ```bash
+   json-server --watch db.json --port 3000
+   ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+5. The Angular app will be running at http://localhost:4200, and the JSON Server will be running at http://localhost:3000.
 
-## Further help
+## Usage
+1. Create Post: Add a new post by filling in the title and body fields, then clicking "Create Post".
+2. Edit Post: Click on "Edit" to modify a post.
+3. Delete Post: Click on "Delete" to remove a post from the list.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Project Structure
+1. src/app: Contains the Angular app's components, services, and state management files
+2. actions: Define actions to dispatch in the app
+3. effects: Handle side effects like API calls
+4. reducers: Manage state updates based on actions
+5. selectors: Extract pieces of the state to pass to the components
+6. models: Define the data structure (e.g., Post model)
+7. components: Contains UI components like PostListComponent, PostCreateComponent
+
+## Contributing
+1. Fork the repository
+2. Create a new branch (git checkout -b feature-name)
+3. Commit your changes (git commit -am 'Add new feature')
+4. Push to the branch (git push origin feature-name)
+5. Create a new Pull Request
