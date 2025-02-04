@@ -54,7 +54,7 @@ This is a demo project showcasing the use of **NgRx** for state management in **
 4. reducers: Manage state updates based on actions
 5. selectors: Extract pieces of the state to pass to the components
 6. models: Define the data structure (e.g., Post model)
-7. components: Contains UI components like PostListComponent, PostCreateComponent
+7. components: Contains UI components like PostListComponent
 
 ## Contributing
 1. Fork the repository
